@@ -1,0 +1,33 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Magicka.Achievements.GameData
+// Assembly: Magicka, Version=1.5.1.0, Culture=neutral, PublicKeyToken=null
+// MVID: 20B30093-0B41-4B13-B130-C3B04DD4E3C2
+// Assembly location: C:\SteamLibrary\steamapps\common\Magicka\Magicka.exe
+
+using System;
+using System.Xml;
+
+#nullable disable
+namespace Magicka.Achievements;
+
+public struct GameData
+{
+  public string Code;
+  public string Name;
+  public string Desc;
+
+  public static void ParseXml(XmlNode iNode, out GameData oData)
+  {
+    oData = new GameData();
+    for (int i = 0; i < iNode.Attributes.Count; ++i)
+    {
+      XmlAttribute attribute = iNode.Attributes[i];
+      if (attribute.Name.Equals("code", StringComparison.OrdinalIgnoreCase))
+        oData.Code = attribute.Value;
+      else if (attribute.Name.Equals("name", StringComparison.OrdinalIgnoreCase))
+        oData.Name = attribute.Value;
+      else if (attribute.Name.Equals("description", StringComparison.OrdinalIgnoreCase))
+        oData.Desc = attribute.Value;
+    }
+  }
+}
