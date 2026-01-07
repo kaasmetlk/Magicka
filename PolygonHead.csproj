@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\SteamLibrary\steamapps\common\Magicka\PolygonHead.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28463D9F-7214-49DE-A825-1FFACFE64723}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>PolygonHead</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>PolygonHead</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="Microsoft.Xna.Framework.Game" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IMaterial`1.cs" />
+    <Compile Include="RenderType.cs" />
+    <Compile Include="PivotPosition.cs" />
+    <Compile Include="RenderableQuad.cs" />
+    <Compile Include="IRenderableGUIObject.cs" />
+    <Compile Include="Fog.cs" />
+    <Compile Include="Scene.cs" />
+    <Compile Include="IProjectionObject.cs" />
+    <Compile Include="TextAlign.cs" />
+    <Compile Include="Text.cs" />
+    <Compile Include="DataChannel.cs" />
+    <Compile Include="Transitions.cs" />
+    <Compile Include="TransitionEnd.cs" />
+    <Compile Include="RenderManager.cs" />
+    <Compile Include="ProjectionObject.cs" />
+    <Compile Include="IRenderableObject.cs" />
+    <Compile Include="IRenderableAdditiveObject.cs" />
+    <Compile Include="VertexPositionNormalTextureColor.cs" />
+    <Compile Include="RenderableObject`2.cs" />
+    <Compile Include="IPostEffect.cs" />
+    <Compile Include="IHeap`1.cs" />
+    <Compile Include="Heap`1.cs" />
+    <Compile Include="IntHeap.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="RenderableAdditiveObject`2.cs" />
+    <Compile Include="IPreRenderRenderer.cs" />
+    <Compile Include="Glyph.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="CharacterVertex.cs" />
+    <Compile Include="BitmapFont.cs" />
+    <Compile Include="MathApproximation.cs" />
+    <Compile Include="Pipeline\LavaEffectReader.cs" />
+    <Compile Include="Pipeline\BitmapFontReader.cs" />
+    <Compile Include="Pipeline\RenderDeferredEffectReader.cs" />
+    <Compile Include="Pipeline\RenderDeferredLiquidEffectReader.cs" />
+    <Compile Include="Pipeline\BiTreeModelReader.cs" />
+    <Compile Include="Pipeline\SkinnedModelDeferredNormalMappedEffectReader.cs" />
+    <Compile Include="Pipeline\AdditiveEffectReader.cs" />
+    <Compile Include="Effects\AdditiveMaterial.cs" />
+    <Compile Include="Effects\DirectionalLightEffectCode.cs" />
+    <Compile Include="Effects\LavaMaterial.cs" />
+    <Compile Include="Effects\LavaEffectCode.cs" />
+    <Compile Include="Effects\SkyMapEffectCode.cs" />
+    <Compile Include="Effects\GUIBasicEffect.cs" />
+    <Compile Include="Effects\SkinnedModelDeferredBasicMaterial.cs" />
+    <Compile Include="Effects\SkinnedModelDeferredAdvancedMaterial.cs" />
+    <Compile Include="Effects\PostProcessingEffect.cs" />
+    <Compile Include="Effects\RestoreDepthEffect.cs" />
+    <Compile Include="Effects\DummyEffect.cs" />
+    <Compile Include="Effects\ClearEffectCode.cs" />
+    <Compile Include="Effects\CrossFadeTransitionEffectCode.cs" />
+    <Compile Include="Effects\FilterEffectCode.cs" />
+    <Compile Include="Effects\PointLightEffect.cs" />
+    <Compile Include="Effects\RenderDeferredLiquidEffect.cs" />
+    <Compile Include="Effects\BatchedPointLightEffectCode.cs" />
+    <Compile Include="Effects\SpotLightEffectCode.cs" />
+    <Compile Include="Effects\TransitionEffect.cs" />
+    <Compile Include="Effects\CrossFadeTransitionEffect.cs" />
+    <Compile Include="Effects\LavaEffect.cs" />
+    <Compile Include="Effects\SkinnedModelDeferredNormalMappedMaterial.cs" />
+    <Compile Include="Effects\RenderDeferredEffectWOVTCode.cs" />
+    <Compile Include="Effects\ProjectionEffectCode.cs" />
+    <Compile Include="Effects\ProjectionEffect.cs" />
+    <Compile Include="Effects\HardwareInstancedProjectionEffectCode.cs" />
+    <Compile Include="Effects\BloomEffect.cs" />
+    <Compile Include="Effects\BasicPostProcessingEffectCode.cs" />
+    <Compile Include="Effects\BasicPostProcessingEffect.cs" />
+    <Compile Include="Effects\SkyMapEffect.cs" />
+    <Compile Include="Effects\RenderDeferredMaterial.cs" />
+    <Compile Include="Effects\ParticleEffectCode.cs" />
+    <Compile Include="Effects\DummyEffectCode.cs" />
+    <Compile Include="Effects\ParticleEffect.cs" />
+    <Compile Include="Effects\AdditiveEffectCode.cs" />
+    <Compile Include="Effects\RenderDeferredLiquidEffectCode.cs" />
+    <Compile Include="Effects\BatchedPointLightEffect.cs" />
+    <Compile Include="Effects\PointLightEffectCode.cs" />
+    <Compile Include="Effects\FadeTransitionEffect.cs" />
+    <Compile Include="Effects\DirectionalLightEffect.cs" />
+    <Compile Include="Effects\ClearEffect.cs" />
+    <Compile Include="Effects\DeferredShadingEffectCode.cs" />
+    <Compile Include="Effects\DeferredShadingEffect.cs" />
+    <Compile Include="Effects\SkinnedModelDeferredEffect.cs" />
+    <Compile Include="Effects\GUIBasicEffectCode.cs" />
+    <Compile Include="Effects\FadeTransitionEffectCode.cs" />
+    <Compile Include="Effects\RenderDeferredEffectWVTCode.cs" />
+    <Compile Include="Effects\HardwareInstancedProjectionEffect.cs" />
+    <Compile Include="Effects\FilterEffect.cs" />
+    <Compile Include="Effects\SkinnedModelDeferredNormalMappedEffect.cs" />
+    <Compile Include="Effects\SpotLightEffect.cs" />
+    <Compile Include="Effects\RenderDeferredEffect.cs" />
+    <Compile Include="Effects\AdditiveEffect.cs" />
+    <Compile Include="Effects\SkinnedModelDeferredEffectCode.cs" />
+    <Compile Include="Effects\RestoreDepthEffectCode.cs" />
+    <Compile Include="Effects\BloomEffectCode.cs" />
+    <Compile Include="Effects\RenderDeferredLiquidMaterial.cs" />
+    <Compile Include="Effects\FogEffectCode.cs" />
+    <Compile Include="Effects\FogEffect.cs" />
+    <Compile Include="Effects\SkinnedModelDeferredNormalMappedEffectCode.cs" />
+    <Compile Include="Helpers\SyncedList`2.cs" />
+    <Compile Include="Helpers\PolygonHeadMath.cs" />
+    <Compile Include="ParticleEffects\KeyedValue.cs" />
+    <Compile Include="ParticleEffects\ParticleLightProperties.cs" />
+    <Compile Include="ParticleEffects\ParticleHelper.cs" />
+    <Compile Include="ParticleEffects\ParticleEmitterCollection.cs" />
+    <Compile Include="ParticleEffects\IParticleEmitter.cs" />
+    <Compile Include="ParticleEffects\PulseEmitter.cs" />
+    <Compile Include="ParticleEffects\Particle.cs" />
+    <Compile Include="ParticleEffects\ParticleSystem.cs" />
+    <Compile Include="ParticleEffects\HalfVector2.cs" />
+    <Compile Include="ParticleEffects\HalfVector3.cs" />
+    <Compile Include="ParticleEffects\HalfVector4.cs" />
+    <Compile Include="ParticleEffects\VisualEffectType.cs" />
+    <Compile Include="ParticleEffects\VisualEffect.cs" />
+    <Compile Include="ParticleEffects\ContinuousEmitter.cs" />
+    <Compile Include="Lights\LightType.cs" />
+    <Compile Include="Lights\LightTransitionType.cs" />
+    <Compile Include="Lights\LightVariationType.cs" />
+    <Compile Include="Lights\Light.cs" />
+    <Compile Include="Lights\LightHelper.cs" />
+    <Compile Include="Lights\DirectionalLight.cs" />
+    <Compile Include="Lights\SpotLight.cs" />
+    <Compile Include="Lights\PointLightBatcher.cs" />
+    <Compile Include="Lights\ParticleLightBatcher.cs" />
+    <Compile Include="Lights\PointLight.cs" />
+    <Compile Include="PackedContent\PackedItem.cs" />
+    <Compile Include="PackedContent\PackedFile.cs" />
+    <Compile Include="PackedContent\PackedContentManager.cs" />
+    <Compile Include="PackedContent\PackedDirectory.cs" />
+    <Compile Include="Models\BiTreeModel.cs" />
+    <Compile Include="Models\BiTreeNode.cs" />
+    <Compile Include="Models\BiTreeRootNode.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft\Xna\Framework.RuntimeProfile" />
+    <EmbeddedResource Include="Tweaker.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
